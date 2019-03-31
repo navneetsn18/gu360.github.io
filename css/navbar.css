@@ -1,0 +1,38 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+#menu{
+  margin: 0;
+  padding: 0;
+}
+#menu li{
+  list-style: none;
+  display: inline-block;
+}
+#menu li a{
+  text-decoration: none;
+  position: relative;
+  color: rgba(255, 255, 255, .5);
+  font-size: 1.7em;
+  font-weight: 700;
+  display: block;
+  overflow: hidden;
+  transition: 0.7s all;
+  padding: 14px 30px;
+}
+#menu li a:before{
+  content: '';
+  width: 60px;
+  position: absolute;
+  border-bottom: 5px solid #fff;
+  bottom: 0;
+  right: 350px;
+  transition: 0.7s all;
+}
+#menu li a:hover{
+  color: #fff;
+}
+#menu li a:hover:before{
+  right: 0;
+}
